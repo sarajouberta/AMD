@@ -13,7 +13,7 @@ LETRA = [a-zA-Z]
 PALABRA = {LETRA}({DIGITO}|{LETRA})+
 %%
 {NUMERO} {System.out.println("NUMERO: " + yytext());}
-{PALABRA}  {System.out.println("PALABRA:" + yytext());}
+{PALABRA}  {System.out.println("PALABRA: " + yytext());}
 {COMENTARIO} = { }
 ; {System.out.print(" FinSentencia");}
 \+ {System.out.print(" Mas");}
